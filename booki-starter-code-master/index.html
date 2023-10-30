@@ -37,9 +37,12 @@
                 </div>
                 <div class="searchbar">
                     <form  class="form_search" method="get" action="">
-                        <i class="fa-sharp fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
-                        <input type="text" placeholder="Marseille, France" name="search">
-                        <button type="submit">Rechercher</button>
+                        <i id="location_icon" class="fa-sharp fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
+                        <input class="search_holder" type="text" placeholder="Marseille, France" name="search">
+                        <input  class="search_button" type="submit" value="Rechercher " ></input>
+                        <button class="button_glass" type="submit">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+                        </button> 
                     </form>
                 </div>
                 <div class="filtres">
@@ -60,12 +63,12 @@
                 </div>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">                        
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
                                     alt="Image montrant la chambre de l'hotel du port">
@@ -88,7 +91,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg"
                                     alt="Image montrant la chambre de l'hotel Chez Amina">
@@ -111,7 +114,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/reisetopia.jpg"
                                     alt="Image montrant la chambre de l'hotel Les mouettes">
@@ -134,7 +137,7 @@
                                 </div>
                             </article>
                         </a>                        
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg"
                                     alt="Image montrant la chambre de l'hotel de la mer">
@@ -157,7 +160,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg"
                                     alt="Image montrant la chambre de l'auberge de la Canebière">
@@ -180,7 +183,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="">
+                        <a href="" class="card_set">
                             <article class="card">
                                 <img src="./images/hebergements/nicate-lee.jpg"
                                     alt="Image montrant la chambre de l'auberge le Panier">
@@ -277,12 +280,12 @@
                     </div>
                 </section>
             </div>
-            <section class="activites">
+            <section id="activites" class="activites">
                     <div class="activites-title">
                         <h2 class="section-title">Activités à Marseille</h2>
                     </div>
                     <div class="activites_cards">
-                        <a href="#">
+                        <a href="#" class="card_scale">
                             <article class="card">
                                 <div class="card-content">
                                     <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-port">
@@ -292,7 +295,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="card_scale">
                             <article class="card">
                                 <div class="card-content">
                                     <img id="fort" src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
@@ -302,7 +305,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="card_scale">
                             <article class="card">
                                 <div class="card-content">
                                     <img src="./images/activites/kilyan-sockalingum.jpg"
@@ -313,7 +316,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="card_scale">
                             <article class="card">
                                 <div class="card-content">
                                     <img src="./images/activites/florian-wehde.jpg"
