@@ -87,14 +87,14 @@ a {
     
 }
 .nav_link:hover{
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 .nav_hebergements::after{
     content: "";
     height: 2px;
     width: 113px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     position: absolute;
     left: 0;
     top: -15px;
@@ -108,7 +108,7 @@ a {
     content: "";
     height: 2px;
     width: 62px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     position: absolute;
     right: 0;
     top: -15px;
@@ -170,7 +170,7 @@ a {
 
 
 .search_button{
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
     font-size: 18px;
     font-weight: 700;   
@@ -183,7 +183,7 @@ a {
 }
 
 .button_glass {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     font-size: 18px;
     font-weight: 700;   
     height: auto;
@@ -281,7 +281,7 @@ a {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
     margin-top: 30px;
 }
 
@@ -477,6 +477,13 @@ footer p{
         width: 100%;
     }
 
+    .hebergements-cards {
+        gap: 25px;
+    }
+    .hebergements-cards img {
+        height: 100px;
+    }
+
     .hebergements-cards .card-title {
         font-size: 14px;
     }
@@ -577,7 +584,7 @@ footer p{
     }
     
     .nav_hebergements:hover::after{
-        background-color: #0065FC;
+        background-color: var(--main-color);
     }
 
     .nav_activites::after{
@@ -588,7 +595,7 @@ footer p{
     }
 
     .nav_activites:hover::after{
-        background-color: #0065FC;
+        background-color: var(--main-color);
     }
 
 
@@ -696,9 +703,12 @@ footer p{
     }
 
     .populaires-cards .card {
-     height: 146px;       
+     height: 146px;
     }
 
+    .populaires-cards img {
+       height: 146px; 
+    }
     .populaires-cards a{
         width: 100%;
     }
@@ -717,9 +727,12 @@ footer p{
     .card_scale {
         width: 100%;
         height: 200px;
-        margin-bottom: 45px;
+        margin-bottom: 10px;
     }
 
+    .activites_cards img {
+        height: 160px;
+    }
     /*footer*/
 
     .footer {
@@ -729,6 +742,5 @@ footer p{
     .footer .footer_box{
         padding-right: 0;
         width: calc(100% - 20px);
-        
     }
 }
